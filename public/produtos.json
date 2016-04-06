@@ -1,0 +1,10 @@
+[
+    {"nome":"X-Burguer","ingredientes":"Hamburguer,Pao,Queijo","preco":"5,50","categoria":"hamburguer"},
+    {"nome":"X-Tudo","ingredientes":"Hamburguer,Pao,Alface,Tomate,Ovo,Queijo,Bacon","preco":"6,50","categoria":"hamburguer"},
+    {"nome":"X-Duplo","ingredientes":"2 Hamburguers,Pao,Alface,Tomate,Ovo,Queijo,Bacon","preco":"6,50","categoria":"hamburguer"},
+    {"nome":"X-Montanha","ingredientes":"3 Hamburguers,Pao,Alface,Tomate,Ovo,Queijo,Bacon,Batata Palha","preco":"8,50","categoria":"hamburguer"},
+    {"nome":"Suco de Laranja","ingredientes":"Laranja,Agua,Acucar","preco":"5,50","categoria":"bebidas"},
+    {"nome":"Suco de Uva","ingredientes":"Uva,Agua,Acucar","preco":"5,50","categoria":"bebidas"},
+    {"nome":"Suco de Maracuja","ingredientes":"Maracuja,Agua,Acucar","preco":"5,50","categoria":"bebidas"},
+    {"nome":"Suco de Manga","ingredientes":"Manga,Agua,Acucar","preco":"5,50","categoria":"bebidas"}
+]

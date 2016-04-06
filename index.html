@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html ng-app="cardapioApp">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="assets/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="public/css/custom.css" rel="stylesheet">
+        <link href="assets/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet">
+        
+        <title>McRancho - A melhor lanchonete do Rancho Novo </title>
+    </head>
+    <body ng-controller="mainController">
+        <header>
+            <div class="jumbotron border-red">
+                <div class="container">
+                    <div class="row">
+                        <h1 class="align-center">McRancho Cardapio</h1>
+                    </div>
+                </div>
+            </div>
+        </header>
+        
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <form class="form-vertical align-center">
+                        <fieldset>
+                                <div class="col-md-10 col-md-offset-1">
+                                <div class="form-group">
+                                        <div class="btn btn-primary btn-lg">
+                                                <input type="checkbox" value=""> Pizza Cone
+                                        </div>
+                                        <div class="btn btn-success btn-lg">
+                                                <input type="checkbox" value=""> Porções
+                                        </div>
+                                        <div class="btn btn-danger btn-lg">
+                                                <input type="checkbox" value=""> Hamburguers
+                                        </div>
+                                        <div class="btn btn-default btn-lg">
+                                                <input type="checkbox" value=""> Combos
+                                        </div>
+                                </div>
+                            </div>    
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row categoria">
+                    <div class="col-md-12">
+                        <h1 class="align-center" id="hamburguers" ><strong>Hamburguers</strong></h1>
+                    </div>    
+                    <table class="table table-stripped">
+                           <tr ng-repeat-start="produto in produtos | filter: { categoria: 'hamburguer' }">
+                                <td colspan="2" class="borda-alimento nome-prato"><strong>{{produto.nome}}</strong></td>
+                                <td class="nome-prato align-right">R${{produto.preco}}</td>
+                           </tr>
+                           <tr ng-repeat-end>
+                            <td colspan="3">{{produto.ingredientes}}.</td>
+                           </tr>
+                    </table>
+                </div >
+                <div class="row categoria">
+                    <div class="col-md-12">
+                        <h1 class="align-center" id="bebidas" ><strong>Bebidas</strong></h1>
+                    </div>    
+                    <table class="table table-stripped">
+                        <tr ng-repeat-start="produto in produtos | filter: { categoria: 'bebidas' }">
+                            <td colspan="2" class="borda-alimento nome-prato"><strong>{{produto.nome}}</strong></td>
+                            <td class="nome-prato align-right">R${{produto.preco}}</td>
+                        </tr>
+                        <tr ng-repeat-end>
+                        <td colspan="3">{{produto.ingredientes}}</td>
+                        </tr>
+                    </table>
+
+                </div>
+            </div>
+        </div>
+
+    <footer class="footer align-center">
+        <div class="container">
+            Todos os Direitos Reservados a McRancho. Desenvolvido por <a href="http://agenciabasic.com.br" target="_parent">Agencia Basic</a>.
+        </div> 
+    </footer>
+    <script src="assets/jquery/dist/jquery.min.js"></script>
+    <script src="assets/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="assets/angular/angular.min.js"></script>
+    <script src="public/js/controller.js"></script>
+
+    </body>
+</html>
