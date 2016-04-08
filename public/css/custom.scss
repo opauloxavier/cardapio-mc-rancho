@@ -1,5 +1,6 @@
 $hamburguer: #670003;
 $bebidas: #f4b226;
+$combo: #ff5102;
 
 .align-center{
     text-align: center;
@@ -24,6 +25,9 @@ $bebidas: #f4b226;
     }
     #hamburguers{
          background-color:$hamburguer;
+    }
+    #combo{
+        background-color:$combo;
     }
 }
 
@@ -53,4 +57,12 @@ $bebidas: #f4b226;
 .nome-prato{
     font-size:18px;
     border-bottom: 1px solid black;
+}
+
+.esconde{
+    display:none;
+}
+
+.btn{
+    min-width:155px;
 }

@@ -1,10 +1,522 @@
 [
-    {"nome":"X-Burguer","ingredientes":"Hamburguer,Pao,Queijo","preco":"5,50","categoria":"hamburguer"},
-    {"nome":"X-Tudo","ingredientes":"Hamburguer,Pao,Alface,Tomate,Ovo,Queijo,Bacon","preco":"6,50","categoria":"hamburguer"},
-    {"nome":"X-Duplo","ingredientes":"2 Hamburguers,Pao,Alface,Tomate,Ovo,Queijo,Bacon","preco":"6,50","categoria":"hamburguer"},
-    {"nome":"X-Montanha","ingredientes":"3 Hamburguers,Pao,Alface,Tomate,Ovo,Queijo,Bacon,Batata Palha","preco":"8,50","categoria":"hamburguer"},
-    {"nome":"Suco de Laranja","ingredientes":"Laranja,Agua,Acucar","preco":"5,50","categoria":"bebidas"},
-    {"nome":"Suco de Uva","ingredientes":"Uva,Agua,Acucar","preco":"5,50","categoria":"bebidas"},
-    {"nome":"Suco de Maracuja","ingredientes":"Maracuja,Agua,Acucar","preco":"5,50","categoria":"bebidas"},
-    {"nome":"Suco de Manga","ingredientes":"Manga,Agua,Acucar","preco":"5,50","categoria":"bebidas"}
+  {
+    "nome": "Mc Burguer",
+    "ingredientes": "Pao, Carne,Salada e Molho Especial",
+    "carne": "5,00",
+    "picanha": "5,50",
+    "categoria": "Hamburguer"
+  },
+  {
+    "nome": "MC X-Burguer",
+    "ingredientes": "Pao,Carne,Queijo,Salada e Molho Especial",
+    "carne": "6,00",
+    "picanha": "7,50",
+    "categoria": "Hamburguer"
+  },
+  {
+    "nome": "Mc X-Bacon",
+    "ingredientes": "Pao,Carne,Queijo, Bacon, Salada e Molho Especial",
+    "carne": "8,00",
+    "picanha": "9,00",
+    "categoria": "Hamburguer"
+  },
+  {
+    "nome": "Mc X-Calabresa",
+    "ingredientes": "Pao,Carne,Queijo,Calabresa,Salada e Molho Especial",
+    "carne": "7,50",
+    "picanha": "9,00",
+    "categoria": "Hamburguer"
+  },
+  {
+    "nome": "Mc X-Egg",
+    "ingredientes": "Pao,Carne,Queijo,Ovo,Salada e Molho Especial",
+    "carne": "7,50",
+    "picanha": "9,00",
+    "categoria": "Hamburguer"
+  },
+  {
+    "nome": "Mc X-Tudo",
+    "ingredientes": "Pao,Carne,Queijo,Presunto,Ovo,Bacon,Salada e Molho Especial",
+    "carne": "8,00",
+    "picanha": "9,50",
+    "categoria": "Hamburguer"
+  },
+  {
+    "nome": "Mc Montanha",
+    "ingredientes": "Pao,2 Carnes,2 Queijos, Presunto, Bacon, Ovo, Salada e Molho Especial",
+    "carne": "9,50",
+    "picanha": "13,00",
+    "categoria": "Hamburguer"
+  },
+  {
+    "nome": "Mc Duplo Burguer",
+    "ingredientes": "Pão, 2 Carnes, 2 Queijos, Salada e Molho Especial",
+    "carne": "8,50",
+    "picanha": "12,00",
+    "categoria": "Hamburguer"
+  },
+  {
+    "nome": "Mc Tremendão",
+    "ingredientes": "Pão com 2 Cortes, 3 Carnes, 2 Ovos, 3 Fatias de Cheddar, Presunto, Salada, Bacon e Molho Especial",
+    "carne": "11,00",
+    "picanha": "15,00",
+    "categoria": "Hamburguer"
+  },
+  {
+    "nome": "Mc Esplendoroso",
+    "ingredientes": "Pão com 2 Cortes, 4 Carnes, 2 Ovos, 4 Fatias de Cheddar, Presunto, Salada, Bacon e Molho Especial",
+    "carne": "13,00",
+    "picanha": "18,50",
+    "categoria": "Hamburguer"
+  },
+  {
+    "nome": "Mc Everest",
+    "ingredientes": "Pão com 2 Cortes, 5 Carnes, 2 Ovos, 5 Fatias de Cheddar, Presunto, Salada, Bacon e Molho Especial",
+    "carne": "15,00",
+    "picanha": "22,00",
+    "categoria": "Hamburguer"
+  },
+  {
+    "nome": "Mc Fabuloso",
+    "ingredientes": "Pão, Carne de Picanha de 200g, 4 Fatias de Cheddar, Ovo, Calabresa em Fatia, Salada,Tomate,Cebola e Molho Especial",
+    "carne": "----",
+    "picanha": "15,00",
+    "categoria": "Hamburguer"
+  },
+  {
+    "nome": "Mc Valente",
+    "ingredientes": "Pão de Baguete,Bife de Contra Filé, Queijo Derretido, Ovo, Cebola Gratinada, Salada e Molho Especial",
+    "carne": "14,00",
+    "picanha": "----",
+    "categoria": "Hamburguer"
+  },
+  {
+    "nome": "Mc Cheddar",
+    "ingredientes": "Pao, Carne de Picanha com 120g, Aplicaçao de Cheddar, Cebola Gratinada, Salada e Molho Especial",
+    "carne": "----",
+    "picanha": "10,00",
+    "categoria": "Hamburguer"
+  },
+  {
+    "nome": "Mc Frango",
+    "ingredientes": "Pao de Baguete, File de Frango Grelhado, Queijo Minas, Salada e Molho Especial",
+    "carne": "8,50",
+    "picanha": "----",
+    "categoria": "Hamburguer"
+  },
+  {
+    "nome": "Mc Sem Culpa",
+    "ingredientes": "Pao Arabe, Pasta de Frango Light, Cenoura, Tomate e Alface",
+    "carne": "8,50",
+    "picanha": "----",
+    "categoria": "Hamburguer"
+  },
+  {
+    "nome": "Mc Linguica",
+    "ingredientes": "Pao de Baguete, 2 Linguicas, Queijo Derretido, Salada, Tomate, Cebola e Molho Especial",
+    "carne": "8,50",
+    "picanha": "----",
+    "categoria": "Hamburguer"
+  },
+  {
+    "nome": "Mc Peixe",
+    "ingredientes": "Pao de Baguete, File de Peixe, Molho Tartaro,Salada,Tomate e Cebola",
+    "carne": "8,50",
+    "picanha": "----",
+    "categoria": "Hamburguer"
+  },
+  {
+    "nome": "Mc Crispy",
+    "ingredientes": "Pao de Baguete, Frango Empanado Recheado com Queijo e Presunto, Bacon ou Calabresa, Queijo Cheddar, Cebola Gratinada Salada e Molho especial",
+    "carne": "12,00",
+    "picanha": "----",
+    "categoria": "Hamburguer"
+  },
+     {
+    "nome": "Mega Batata",
+    "ingredientes": "Batata Frita, Bacon e Aplicação de Cheddar",
+    "pequena": 13,
+    "grande": 18,
+    "categoria": "Porcoes"
+  },
+  {
+    "nome": "Batata Frita",
+    "ingredientes": "Batata Frita Tradicional",
+    "pequena": 10,
+    "grande": 14,
+    "categoria": "Porcoes"
+  },
+  {
+    "nome": "Batata Frita Especial",
+    "ingredientes": "Batata Frita com Queijo Derretido e Linguiça",
+    "pequena": 13,
+    "grande": 17,
+    "categoria": "Porcoes"
+  },
+  {
+    "nome": "Aipim Frito",
+    "ingredientes": "Aipim Frito",
+    "pequena": "----",
+    "grande": 11,
+    "categoria": "Porcoes"
+  },{
+    "nome": "Cachorro Quente Salsicha",
+    "ingredientes": "Pão,Salsichas, Batata Palha",
+    "preco": 5,
+    "categoria": "Cachorro-Quente"
+  },
+  {
+    "nome": "Cachorro Quente Salsicha Dupla",
+    "ingredientes": "Pão, 2 Salsichas, Batata Palha",
+    "preco": 5.5,
+    "categoria": "Cachorro-Quente"
+  },
+  {
+    "nome": "Cachorro Quente Linguica",
+    "ingredientes": "Pão,Linguica, Batata Palha",
+    "preco": 6,
+    "categoria": "Cachorro-Quente"
+  },
+  {
+    "nome": "Cachorro Quente Linguica Dupla",
+    "ingredientes": "Pão, 2 Linguicas, Batata Palha",
+    "preco": 6.5,
+    "categoria": "Cachorro-Quente"
+  },
+  {
+    "nome": "Mc Bauru",
+    "ingredientes": "Pão de Forma, 2 Ovos, 2 Bifes de Contra File, Cebola Gratinada, Queijo Derretido, Presunto, Bacon, Calabresa, Porcao Grande de Batata Frita, Salada e Molho Especial",
+    "preco": 30,
+    "categoria": "Familia"
+  },
+  {
+    "nome": "Mc Contra File",
+    "ingredientes": "Contrafile Acebolado com Aipim Frito",
+    "preco": 25,
+    "categoria": "Familia"
+  },
+  {
+    "nome": "Muçarela",
+    "ingredientes": "Muçarela e Orégano",
+    "preco": 6,
+    "categoria": "Pizza Cone Salgada"
+  },
+  {
+    "nome": "Calabresa",
+    "ingredientes": "Muçarela, Calabresa e Orégano",
+    "preco": 6.5,
+    "categoria": "Pizza Cone Salgada"
+  },
+  {
+    "nome": "Calabresa com Milho",
+    "ingredientes": "Muçarela, Milho, Calabresa e Orégano",
+    "preco": 7,
+    "categoria": "Pizza Cone Salgada"
+  },
+  {
+    "nome": "Presunto",
+    "ingredientes": "Muçarela, Presunto e Orégano",
+    "preco": 6.5,
+    "categoria": "Pizza Cone Salgada"
+  },
+  {
+    "nome": "Frango",
+    "ingredientes": "Muçarela, Frango e Orégano",
+    "preco": 7,
+    "categoria": "Pizza Cone Salgada"
+  },
+  {
+    "nome": "Frango com Catupiry",
+    "ingredientes": "Muçarela,Frango, Catupiry e Orégano",
+    "preco": 7.5,
+    "categoria": "Pizza Cone Salgada"
+  },
+  {
+    "nome": "Portuguesa",
+    "ingredientes": "Muçarela,Presunto,Calabresa,Ovo,Milho,Azeitona e Orégano",
+    "preco": 7,
+    "categoria": "Pizza Cone Salgada"
+  },
+  {
+    "nome": "Camarão",
+    "ingredientes": "Camarão e Orégano",
+    "preco": 8.5,
+    "categoria": "Pizza Cone Salgada"
+  },
+  {
+    "nome": "Camarão com Catupiry",
+    "ingredientes": "Camarão,Catupiry e Orégano",
+    "preco": 9,
+    "categoria": "Pizza Cone Salgada"
+  },
+  {
+    "nome": "Carne Seca",
+    "ingredientes": "Muçarela, Carne Seca e Orégano",
+    "preco": 7.5,
+    "categoria": "Pizza Cone Salgada"
+  },
+  {
+    "nome": "Carne Seca com Milho",
+    "ingredientes": "Muçarela,Carne Seca,Milho e Orégano",
+    "preco": 8,
+    "categoria": "Pizza Cone Salgada"
+  },
+  {
+    "nome": "Carne Seca com Catupiry",
+    "ingredientes": "Muçarela,Carne Seca, Catupiry e Orégano",
+    "preco": 8,
+    "categoria": "Pizza Cone Salgada"
+  },
+  {
+    "nome": "Bacon",
+    "ingredientes": "Muçarela,Presunto,Bacon e Orégano",
+    "preco": 7.5,
+    "categoria": "Pizza Cone Salgada"
+  },
+  {
+    "nome": "Bacon com Catupiry",
+    "ingredientes": "Muçarela, Presunto, Bacon, Catupiry e Orégano",
+    "preco": 8,
+    "categoria": "Pizza Cone Salgada"
+  },
+  {
+    "nome": "Bacalhau",
+    "ingredientes": "Muçarela e Bacalhau",
+    "preco": 8.5,
+    "categoria": "Pizza Cone Salgada"
+  },
+  {
+    "nome": "Palmito",
+    "ingredientes": "Muçarela e Palmito",
+    "preco": 8.5,
+    "categoria": "Pizza Cone Salgada"
+  },
+  {
+    "nome": "Atum",
+    "ingredientes": "Muçarela e Atum",
+    "preco": 8.5,
+    "categoria": "Pizza Cone Salgada"
+  },
+  {
+    "nome": "Quatro Quejios",
+    "ingredientes": "Muçarela,Provolone,Parmesão e Gorgonzola",
+    "preco": 8.5,
+    "categoria": "Pizza Cone Salgada"
+  },
+  {
+    "nome": "Alho",
+    "ingredientes": "Muçarela e Alho",
+    "preco": 7.5,
+    "categoria": "Pizza Cone Salgada"
+  },
+  {
+    "nome": "Banana",
+    "ingredientes": "Muçarela,Banana e Canela",
+    "preco": 6.5,
+    "categoria": "Pizza Cone Doce"
+  },
+  {
+    "nome": "Moreninha",
+    "ingredientes": "Brigadeiro,Banana e Canela",
+    "preco": 8,
+    "categoria": "Pizza Cone Doce"
+  },
+  {
+    "nome": "Prestígio",
+    "ingredientes": "Brigadeiro e Coco",
+    "preco": 8,
+    "categoria": "Pizza Cone Doce"
+  },
+  {
+    "nome": "Delícia de Morango",
+    "ingredientes": "Brigadeiro ou Nutella, Morango",
+    "preco": 9,
+    "categoria": "Pizza Cone Doce"
+  },
+  {
+    "nome": "Romeu e Julieta",
+    "ingredientes": "Queijo Branco e Goiabada",
+    "preco": 6.5,
+    "categoria": "Pizza Cone Doce"
+  },
+  {
+    "nome": "Nutella",
+    "ingredientes": "Nutella",
+    "preco": 9.5,
+    "categoria": "Pizza Cone Doce"
+  },
+  {
+    "nome": "Refrigerante 2L",
+    "ingredientes": 0,
+    "preco": 8,
+    "categoria": "Bebidas"
+  },
+  {
+    "nome": "Refrigerante 1,5L",
+    "ingredientes": 0,
+    "preco": 7,
+    "categoria": "Bebidas"
+  },
+  {
+    "nome": "Refrigerante 600mL",
+    "ingredientes": 0,
+    "preco": 5,
+    "categoria": "Bebidas"
+  },
+  {
+    "nome": "Refrigerante Lata",
+    "ingredientes": 0,
+    "preco": 4,
+    "categoria": "Bebidas"
+  },
+  {
+    "nome": "Del Valle Lata",
+    "ingredientes": 0,
+    "preco": 4,
+    "categoria": "Bebidas"
+  },
+  {
+    "nome": "H2O",
+    "ingredientes": 0,
+    "preco": 4,
+    "categoria": "Bebidas"
+  },
+  {
+    "nome": "Água Mineral",
+    "ingredientes": 0,
+    "preco": 2,
+    "categoria": "Bebidas"
+  },
+  {
+    "nome": "Guaracamp",
+    "ingredientes": 0,
+    "preco": 1.5,
+    "categoria": "Bebidas"
+  },
+  {
+    "nome": "Água Tônica Lata",
+    "ingredientes": 0,
+    "preco": 4,
+    "categoria": "Bebidas"
+  },
+  {
+    "nome": "Limão",
+    "ingredientes": 0,
+    "preco": 5,
+    "categoria": "Sucos"
+  },
+  {
+    "nome": "Laranja",
+    "ingredientes": 0,
+    "preco": 5,
+    "categoria": "Sucos"
+  },
+  {
+    "nome": "Melão",
+    "ingredientes": 0,
+    "preco": 5,
+    "categoria": "Sucos"
+  },
+  {
+    "nome": "Goiaba",
+    "ingredientes": 0,
+    "preco": 5,
+    "categoria": "Sucos"
+  },
+  {
+    "nome": "Abacaxi",
+    "ingredientes": 0,
+    "preco": 5,
+    "categoria": "Sucos"
+  },
+  {
+    "nome": "Maracujá",
+    "ingredientes": 0,
+    "preco": 5,
+    "categoria": "Sucos"
+  },
+  {
+    "nome": "Manga",
+    "ingredientes": 0,
+    "preco": 5,
+    "categoria": "Sucos"
+  },
+  {
+    "nome": "Morango",
+    "ingredientes": 0,
+    "preco": 5,
+    "categoria": "Sucos"
+  },
+  {
+    "nome": "Pêssego",
+    "ingredientes": 0,
+    "preco": 5,
+    "categoria": "Sucos"
+  },
+  {
+    "nome": "Graviola",
+    "ingredientes": 0,
+    "preco": 5,
+    "categoria": "Sucos"
+  },
+  {
+    "nome": "Laranja com Acerola",
+    "ingredientes": 0,
+    "preco": 5,
+    "categoria": "Sucos"
+  },
+  {
+    "nome": "Melão com Laranja",
+    "ingredientes": 0,
+    "preco": 5,
+    "categoria": "Sucos"
+  },
+  {
+    "nome": "Abacaxi com Hortelã",
+    "ingredientes": 0,
+    "preco": 5,
+    "categoria": "Sucos"
+  },
+  {
+    "nome": "Laranja com Morango",
+    "ingredientes": 0,
+    "preco": 5,
+    "categoria": "Sucos"
+  },
+  {
+    "nome": "Morango ao Leite",
+    "ingredientes": 0,
+    "preco": 6,
+    "categoria": "Vitaminas"
+  },
+  {
+    "nome": "Maracujá ao Leite",
+    "ingredientes": 0,
+    "preco": 6,
+    "categoria": "Vitaminas"
+  },
+  {
+    "nome": "Manga ao Leite",
+    "ingredientes": 0,
+    "preco": 6,
+    "categoria": "Vitaminas"
+  },
+  {
+    "nome": "Banana",
+    "ingredientes": 0,
+    "preco": 6,
+    "categoria": "Vitaminas"
+  },
+  {
+    "nome": "Banana com Aveia",
+    "ingredientes": 0,
+    "preco": 6,
+    "categoria": "Vitaminas"
+  },
+  {
+    "nome": "Graviola ao leite",
+    "ingredientes": 0,
+    "preco": 6,
+    "categoria": "Vitaminas"
+  }
 ]
