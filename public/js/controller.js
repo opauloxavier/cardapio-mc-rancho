@@ -8,22 +8,26 @@ app.controller("mainController",function($http, $scope,$rootScope){
 	});
 
  $rootScope.showAll = function(){
-    $scope.showHamburguer=true;
-    $scope.showHotDog = true;
-    $scope.showPizzaSalgada = true;
-    $scope.showPizzaDoce = true;
-    $scope.showFamilia = true;
-    $scope.showPorcao = true;
-    $scope.showBebida =true;
-    $scope.showVitamina = true;
-    $scope.showSuco = true; 
-    $scope.showCombo=true;
+    $scope.showHamburguer= true; //
+    $scope.showHotDog = true; //
+    $scope.showPizzaSalgada = true; //
+    $scope.showPizzaDoce = true; //
+    $scope.showPorcao = true; //
+    $scope.showBebida = true; //
+    $scope.showVitamina = true;//
+    $scope.showSuco = true; //
+    $scope.showCombo = true; //
      
+    $scope.isActiveHamburguer=true; //
+    $scope.isActiveBebida=true; //
+    $scope.isActiveCombo=true;  //
+    $scope.isActivePorcao=true; //
+    $scope.isActiveHotDog = true; //
+    $scope.isActivePizzaSalgada = true; // 
+    $scope.isActivePizzaDoce = true; //
+    $scope.isActiveVitamina = true; //
+    $scope.isActiveSuco = true; //
      
-    $scope.isActiveHamburguer=true;
-    $scope.isActiveBebidas=true;
-    $scope.isActiveCombo=true;
-    $scope.isActivePorcao=true;
  }
  
   $scope.activeButtonBebida = function() {
@@ -36,9 +40,44 @@ $scope.activeButtonHamburguer = function() {
       $scope.showHamburguer=!$scope.showHamburguer;
   }
 
+  $scope.activeButtonHotDog = function() {
+    $scope.isActiveHotDog = !$scope.isActiveHotDog;
+      $scope.showHotDog=!$scope.showHotDog;
+  }
+
 $scope.activeButtonCombo = function() {
     $scope.isActiveCombo = !$scope.isActiveCombo;
       $scope.showCombo=!$scope.showCombo;
+  }
+
+$scope.activeButtonSuco = function() {
+    $scope.isActiveSuco = !$scope.isActiveSuco;
+      $scope.showSuco=!$scope.showSuco;
+  }
+
+$scope.activeButtonVitamina = function() {
+    $scope.isActiveVitamina = !$scope.isActiveVitamina;
+      $scope.showVitamina=!$scope.showVitamina;
+  }
+
+$scope.activeButtonPorcao = function() {
+    $scope.isActivePorcao = !$scope.isActivePorcao;
+      $scope.showPorcao=!$scope.showPorcao;
+  }
+
+$scope.activeButtonFamilia = function() {
+    $scope.isActiveFamilia = !$scope.isActiveFamilia;
+      $scope.showFamilia=!$scope.showFamilia;
+  }
+
+$scope.activeButtonPizzaDoce = function() {
+    $scope.isActivePizzaDoce = !$scope.isActivePizzaDoce;
+      $scope.showPizzaDoce=!$scope.showPizzaDoce;
+  }
+
+$scope.activeButtonPizzaSalgada = function() {
+    $scope.isActivePizzaSalgada = !$scope.isActivePizzaSalgada;
+      $scope.showPizzaSalgada=!$scope.showPizzaSalgada;
   }
 
 });

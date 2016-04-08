@@ -161,242 +161,242 @@
     "categoria": "Porcoes"
   },{
     "nome": "Cachorro Quente Salsicha",
-    "ingredientes": "Pão,Salsichas, Batata Palha",
-    "preco": 5,
+    "ingredientes": "Pão,Salsicha, Batata Palha",
+    "preco": "5,00",
     "categoria": "Cachorro-Quente"
   },
   {
     "nome": "Cachorro Quente Salsicha Dupla",
     "ingredientes": "Pão, 2 Salsichas, Batata Palha",
-    "preco": 5.5,
+    "preco": "5,50",
     "categoria": "Cachorro-Quente"
   },
   {
     "nome": "Cachorro Quente Linguica",
-    "ingredientes": "Pão,Linguica, Batata Palha",
-    "preco": 6,
+    "ingredientes": "Pão,Linguiça, Batata Palha",
+    "preco": "6,00",
     "categoria": "Cachorro-Quente"
   },
   {
     "nome": "Cachorro Quente Linguica Dupla",
-    "ingredientes": "Pão, 2 Linguicas, Batata Palha",
-    "preco": 6.5,
+    "ingredientes": "Pão, 2 Linguiças, Batata Palha",
+    "preco": "6,50",
     "categoria": "Cachorro-Quente"
   },
   {
     "nome": "Mc Bauru",
     "ingredientes": "Pão de Forma, 2 Ovos, 2 Bifes de Contra File, Cebola Gratinada, Queijo Derretido, Presunto, Bacon, Calabresa, Porcao Grande de Batata Frita, Salada e Molho Especial",
     "preco": 30,
-    "categoria": "Familia"
+    "categoria": "Porcoes"
   },
   {
     "nome": "Mc Contra File",
     "ingredientes": "Contrafile Acebolado com Aipim Frito",
     "preco": 25,
-    "categoria": "Familia"
+    "categoria": "Porcoes"
   },
   {
     "nome": "Muçarela",
     "ingredientes": "Muçarela e Orégano",
-    "preco": 6,
+    "preco": "6,00",
     "categoria": "Pizza Cone Salgada"
   },
   {
     "nome": "Calabresa",
     "ingredientes": "Muçarela, Calabresa e Orégano",
-    "preco": 6.5,
+    "preco": "6,50",
     "categoria": "Pizza Cone Salgada"
   },
   {
     "nome": "Calabresa com Milho",
     "ingredientes": "Muçarela, Milho, Calabresa e Orégano",
-    "preco": 7,
+    "preco": "7,00",
     "categoria": "Pizza Cone Salgada"
   },
   {
     "nome": "Presunto",
     "ingredientes": "Muçarela, Presunto e Orégano",
-    "preco": 6.5,
+    "preco": "6,50",
     "categoria": "Pizza Cone Salgada"
   },
   {
     "nome": "Frango",
     "ingredientes": "Muçarela, Frango e Orégano",
-    "preco": 7,
+    "preco": "7,00",
     "categoria": "Pizza Cone Salgada"
   },
   {
     "nome": "Frango com Catupiry",
     "ingredientes": "Muçarela,Frango, Catupiry e Orégano",
-    "preco": 7.5,
+    "preco": "7,50",
     "categoria": "Pizza Cone Salgada"
   },
   {
     "nome": "Portuguesa",
     "ingredientes": "Muçarela,Presunto,Calabresa,Ovo,Milho,Azeitona e Orégano",
-    "preco": 7,
+    "preco": "7,00",
     "categoria": "Pizza Cone Salgada"
   },
   {
     "nome": "Camarão",
     "ingredientes": "Camarão e Orégano",
-    "preco": 8.5,
+    "preco": "8,50",
     "categoria": "Pizza Cone Salgada"
   },
   {
     "nome": "Camarão com Catupiry",
     "ingredientes": "Camarão,Catupiry e Orégano",
-    "preco": 9,
+    "preco": "9,00",
     "categoria": "Pizza Cone Salgada"
   },
   {
     "nome": "Carne Seca",
     "ingredientes": "Muçarela, Carne Seca e Orégano",
-    "preco": 7.5,
+    "preco": "7,50",
     "categoria": "Pizza Cone Salgada"
   },
   {
     "nome": "Carne Seca com Milho",
     "ingredientes": "Muçarela,Carne Seca,Milho e Orégano",
-    "preco": 8,
+    "preco": "8,00",
     "categoria": "Pizza Cone Salgada"
   },
   {
     "nome": "Carne Seca com Catupiry",
     "ingredientes": "Muçarela,Carne Seca, Catupiry e Orégano",
-    "preco": 8,
+    "preco": "8,00",
     "categoria": "Pizza Cone Salgada"
   },
   {
     "nome": "Bacon",
     "ingredientes": "Muçarela,Presunto,Bacon e Orégano",
-    "preco": 7.5,
+    "preco": "7,50",
     "categoria": "Pizza Cone Salgada"
   },
   {
     "nome": "Bacon com Catupiry",
     "ingredientes": "Muçarela, Presunto, Bacon, Catupiry e Orégano",
-    "preco": 8,
+    "preco": "8,00",
     "categoria": "Pizza Cone Salgada"
   },
   {
     "nome": "Bacalhau",
     "ingredientes": "Muçarela e Bacalhau",
-    "preco": 8.5,
+    "preco": "8,50",
     "categoria": "Pizza Cone Salgada"
   },
   {
     "nome": "Palmito",
     "ingredientes": "Muçarela e Palmito",
-    "preco": 8.5,
+    "preco": "8,50",
     "categoria": "Pizza Cone Salgada"
   },
   {
     "nome": "Atum",
     "ingredientes": "Muçarela e Atum",
-    "preco": 8.5,
+    "preco": "8,50",
     "categoria": "Pizza Cone Salgada"
   },
   {
     "nome": "Quatro Quejios",
     "ingredientes": "Muçarela,Provolone,Parmesão e Gorgonzola",
-    "preco": 8.5,
+    "preco": "8,50",
     "categoria": "Pizza Cone Salgada"
   },
   {
     "nome": "Alho",
     "ingredientes": "Muçarela e Alho",
-    "preco": 7.5,
+    "preco": "7,50",
     "categoria": "Pizza Cone Salgada"
   },
   {
     "nome": "Banana",
     "ingredientes": "Muçarela,Banana e Canela",
-    "preco": 6.5,
+    "preco": "6,50",
     "categoria": "Pizza Cone Doce"
   },
   {
     "nome": "Moreninha",
     "ingredientes": "Brigadeiro,Banana e Canela",
-    "preco": 8,
+    "preco": "8,00",
     "categoria": "Pizza Cone Doce"
   },
   {
     "nome": "Prestígio",
     "ingredientes": "Brigadeiro e Coco",
-    "preco": 8,
+    "preco": "8,00",
     "categoria": "Pizza Cone Doce"
   },
   {
     "nome": "Delícia de Morango",
     "ingredientes": "Brigadeiro ou Nutella, Morango",
-    "preco": 9,
+    "preco": "9,00",
     "categoria": "Pizza Cone Doce"
   },
   {
     "nome": "Romeu e Julieta",
     "ingredientes": "Queijo Branco e Goiabada",
-    "preco": 6.5,
+    "preco": "6,50",
     "categoria": "Pizza Cone Doce"
   },
   {
     "nome": "Nutella",
     "ingredientes": "Nutella",
-    "preco": 9.5,
+    "preco": "9,50",
     "categoria": "Pizza Cone Doce"
   },
   {
     "nome": "Refrigerante 2L",
     "ingredientes": 0,
-    "preco": 8,
+    "preco": "8,00",
     "categoria": "Bebidas"
   },
   {
     "nome": "Refrigerante 1,5L",
     "ingredientes": 0,
-    "preco": 7,
+    "preco": "7,00",
     "categoria": "Bebidas"
   },
   {
     "nome": "Refrigerante 600mL",
     "ingredientes": 0,
-    "preco": 5,
+    "preco": "5,00",
     "categoria": "Bebidas"
   },
   {
     "nome": "Refrigerante Lata",
     "ingredientes": 0,
-    "preco": 4,
+    "preco": "4,00",
     "categoria": "Bebidas"
   },
   {
     "nome": "Del Valle Lata",
     "ingredientes": 0,
-    "preco": 4,
+    "preco": "4,00",
     "categoria": "Bebidas"
   },
   {
     "nome": "H2O",
     "ingredientes": 0,
-    "preco": 4,
+    "preco": "4,00",
     "categoria": "Bebidas"
   },
   {
     "nome": "Água Mineral",
     "ingredientes": 0,
-    "preco": 2,
+    "preco": "2,00",
     "categoria": "Bebidas"
   },
   {
     "nome": "Guaracamp",
     "ingredientes": 0,
-    "preco": 1.5,
+    "preco": "1,50",
     "categoria": "Bebidas"
   },
   {
     "nome": "Água Tônica Lata",
     "ingredientes": 0,
-    "preco": 4,
+    "preco": "4,00",
     "categoria": "Bebidas"
   },
   {
