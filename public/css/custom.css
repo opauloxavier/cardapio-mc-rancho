@@ -141,7 +141,6 @@ a, a:hover, a:active, a:link {
   border-bottom: 1px solid black; }
 
 .nome-prato {
-  font-size: 18px;
   border-bottom: 1px solid black; }
 
 @media screen and (min-width: 600px) {
@@ -167,5 +166,12 @@ a, a:hover, a:active, a:link {
 
 .jumbotron {
   background-color: #f4b325; }
+
+@media screen and (max-width: 600px) {
+  .nome-prato {
+    font-size: 12px; } }
+@media screen and (min-width: 600px) {
+  .nome-prato {
+    font-size: 20px; } }
 
 /*# sourceMappingURL=custom.css.map */

@@ -155,7 +155,6 @@ a,a:hover,a:active,a:link{
 }
 
 .nome-prato{
-    font-size:18px;
     border-bottom: 1px solid black;
 }
 
@@ -196,6 +195,8 @@ a,a:hover,a:active,a:link{
     }
 }
 
+
+@media screen and (max-width: 350)
 .btn{
     min-height:65px;
 }
@@ -204,3 +205,14 @@ a,a:hover,a:active,a:link{
     background-color: $fundoHeader;
 }
 
+@media screen and (max-width: 600px) {
+ .nome-prato{
+       font-size:12px;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .nome-prato{
+       font-size:20px;
+    }
+}
