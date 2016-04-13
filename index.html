@@ -6,7 +6,6 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <link rel='shortcut icon' type='image/x-icon' href='public/img/favicon.png'/>
         <link href='https://fonts.googleapis.com/css?family=Bree+Serif' rel='stylesheet' type='text/css'>
-        
         <link href="assets/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
         <link href="public/css/custom.css" rel="stylesheet">
         <link href="assets/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet">
@@ -14,251 +13,253 @@
         <title>McRancho - A melhor lanchonete do Rancho Novo </title>
     </head>
     <body ng-controller="mainController" ng-init="showAll()">
-    <div class="container-fluid">
-        <header>
-            <div class="jumbotron border-red">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-4 col-md-offset-4">
-                             <img src="public/img/banner.png" class="img-responsive center-block" alt="McRancho"> 
+    <div class="row">
+        <div class="container-fluid">
+            <header>
+                <div class="jumbotron border-red" style="border-radius: 0px;">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-4 col-md-offset-4">
+                                 <img src="public/img/banner.png" class="img-responsive center-block" alt="McRancho"> 
+                            </div>
+                        </div>
+                        <div class="row">
+                            <h1 class="align-center titulo"><strong>Cardápio</strong></h1>
                         </div>
                     </div>
-                    <div class="row">
-                        <h1 class="align-center titulo"><strong>Cardápio</strong></h1>
+                </div>
+            </header>
+
+            <div class="container-fluid" style="min-height:650px;">
+                <div class="row">
+                    <div class="col-md-12">
+                        <form class="form-vertical align-center">
+                            <fieldset>
+                                <div class="col-md-10 col-md-offset-1">
+                                    <div class="form-group">
+                                        <h2>Escolha as Categorias que deseja ver:</h2>
+                                    </div>
+                                    <div class="form-group">
+                                        <!-- Hot Dog-->
+                                             <button ng-click="activeButtonHotDog()" class="btn btn-hotDog btn-lg active"  ng-class="{'active' : isActiveHotDog}">
+                                                <span ng-show="!isActiveHotDog" class="glyphicon glyphicon-plus"></span>
+                                                <span ng-show="isActiveHotDog" class="glyphicon glyphicon-remove"></span>  
+                                                Cachorro Quente
+                                            </button>
+                                          <!-- Bebida -->
+                                            <button ng-click="activeButtonBebida()" class="btn btn-bebida btn-lg active"  ng-class="{'active' : isActiveBebida}">
+                                                <span ng-show="!isActiveBebida" class="glyphicon glyphicon-plus"></span>
+                                                <span ng-show="isActiveBebida" class="glyphicon glyphicon-remove"></span>  
+                                                Bebidas
+                                            </button>
+                                         <!-- Porcao -->
+                                            <button ng-click="activeButtonPorcao()" class="btn btn-success btn-lg active"  ng-class="{'active' : isActivePorcao}">
+                                                <span ng-show="!isActivePorcao" class="glyphicon glyphicon-plus"></span>
+                                                <span ng-show="isActivePorcao" class="glyphicon glyphicon-remove"></span>  
+                                                Porções
+                                            </button>
+                                          <!-- Hamburguer -->
+                                            <button ng-click="activeButtonHamburguer()" ng-class="{'active' : isActiveHamburguer}" class="btn btn-hamburguer btn-lg active">
+                                                <span ng-show="!isActiveHamburguer" class="glyphicon glyphicon-plus"></span>
+                                                <span ng-show="isActiveHamburguer" class="glyphicon glyphicon-remove"></span>  
+                                                 Hamburguers
+                                            </button>
+                                    </div>
+                                    <div class="form-group">
+                                         <!-- Pizza Salgada -->
+                                            <button ng-click="activeButtonPizzaSalgada()" ng-class="{'active' : isActivePizzaSalgada}" class="btn btn-info btn-lg active">
+                                                <span ng-show="!isActivePizzaSalgada" class="glyphicon glyphicon-plus"></span>
+                                                <span ng-show="isActivePizzaSalgada" class="glyphicon glyphicon-remove"></span>  
+                                                 Pizza Cone Salgada
+                                            </button>
+                                        <!-- Pizza Doce -->
+                                            <button ng-click="activeButtonPizzaDoce()" ng-class="{'active' : isActivePizzaDoce}" class="btn btn-warning btn-lg active">
+                                                <span ng-show="!isActivePizzaDoce" class="glyphicon glyphicon-plus"></span>
+                                                <span ng-show="isActivePizzaDoce" class="glyphicon glyphicon-remove"></span>  
+                                                 Pizza Cone Doce
+                                            </button>
+                                         <!-- Sucos -->
+                                            <button ng-click="activeButtonSuco()" ng-class="{'active' : isActiveSuco}" class="btn btn-danger btn-lg active">
+                                                <span ng-show="!isActiveSuco" class="glyphicon glyphicon-plus"></span>
+                                                <span ng-show="isActiveSuco" class="glyphicon glyphicon-remove"></span>  
+                                                 Sucos
+                                            </button>
+                                         <!-- Vitaminas -->
+                                            <button ng-click="activeButtonVitamina()" ng-class="{'active' : isActiveVitamina}" class="btn btn-vitamina btn-lg active">
+                                                <span ng-show="!isActiveVitamina" class="glyphicon glyphicon-plus"></span>
+                                                <span ng-show="isActiveVitamina" class="glyphicon glyphicon-remove"></span>  
+                                                 Vitaminas
+                                            </button>
+                                        <!-- Combo 
+                                            <button ng-click="activeButtonCombo()" class="btn btn-success btn-lg active"  ng-class="{'active' : isActiveCombo}">
+                                                <span ng-show="!isActiveCombo" class="glyphicon glyphicon-plus"></span>
+                                                <span ng-show="isActiveCombo" class="glyphicon glyphicon-remove"></span>  
+                                                Combo
+                                            </button>
+                                        -->
+                                    </div>
+                                </div>    
+                            </fieldset>
+                        </form>
                     </div>
                 </div>
-            </div>
-        </header>
-        
-        <div class="container-fluid" style="min-height:650px;">
-            <div class="row">
-                <div class="col-md-12">
-                    <form class="form-vertical align-center">
-                        <fieldset>
-                            <div class="col-md-10 col-md-offset-1">
-                                <div class="form-group">
-                                    <h2>Escolha as Categorias que deseja ver:</h2>
-                                </div>
-                                <div class="form-group">
-                                    <!-- Hot Dog-->
-                                         <button ng-click="activeButtonHotDog()" class="btn btn-hotDog btn-lg active"  ng-class="{'active' : isActiveHotDog}">
-                                            <span ng-show="!isActiveHotDog" class="glyphicon glyphicon-plus"></span>
-                                            <span ng-show="isActiveHotDog" class="glyphicon glyphicon-remove"></span>  
-                                            Cachorro Quente
-                                        </button>
-                                      <!-- Bebida -->
-                                        <button ng-click="activeButtonBebida()" class="btn btn-bebida btn-lg active"  ng-class="{'active' : isActiveBebida}">
-                                            <span ng-show="!isActiveBebida" class="glyphicon glyphicon-plus"></span>
-                                            <span ng-show="isActiveBebida" class="glyphicon glyphicon-remove"></span>  
-                                            Bebidas
-                                        </button>
-                                     <!-- Porcao -->
-                                        <button ng-click="activeButtonPorcao()" class="btn btn-success btn-lg active"  ng-class="{'active' : isActivePorcao}">
-                                            <span ng-show="!isActivePorcao" class="glyphicon glyphicon-plus"></span>
-                                            <span ng-show="isActivePorcao" class="glyphicon glyphicon-remove"></span>  
-                                            Porções
-                                        </button>
-                                      <!-- Hamburguer -->
-                                        <button ng-click="activeButtonHamburguer()" ng-class="{'active' : isActiveHamburguer}" class="btn btn-hamburguer btn-lg active">
-                                            <span ng-show="!isActiveHamburguer" class="glyphicon glyphicon-plus"></span>
-                                            <span ng-show="isActiveHamburguer" class="glyphicon glyphicon-remove"></span>  
-                                             Hamburguers
-                                        </button>
-                                </div>
-                                <div class="form-group">
-                                     <!-- Pizza Salgada -->
-                                        <button ng-click="activeButtonPizzaSalgada()" ng-class="{'active' : isActivePizzaSalgada}" class="btn btn-info btn-lg active">
-                                            <span ng-show="!isActivePizzaSalgada" class="glyphicon glyphicon-plus"></span>
-                                            <span ng-show="isActivePizzaSalgada" class="glyphicon glyphicon-remove"></span>  
-                                             Pizza Cone Salgada
-                                        </button>
-                                    <!-- Pizza Doce -->
-                                        <button ng-click="activeButtonPizzaDoce()" ng-class="{'active' : isActivePizzaDoce}" class="btn btn-warning btn-lg active">
-                                            <span ng-show="!isActivePizzaDoce" class="glyphicon glyphicon-plus"></span>
-                                            <span ng-show="isActivePizzaDoce" class="glyphicon glyphicon-remove"></span>  
-                                             Pizza Cone Doce
-                                        </button>
-                                     <!-- Sucos -->
-                                        <button ng-click="activeButtonSuco()" ng-class="{'active' : isActiveSuco}" class="btn btn-danger btn-lg active">
-                                            <span ng-show="!isActiveSuco" class="glyphicon glyphicon-plus"></span>
-                                            <span ng-show="isActiveSuco" class="glyphicon glyphicon-remove"></span>  
-                                             Sucos
-                                        </button>
-                                     <!-- Vitaminas -->
-                                        <button ng-click="activeButtonVitamina()" ng-class="{'active' : isActiveVitamina}" class="btn btn-vitamina btn-lg active">
-                                            <span ng-show="!isActiveVitamina" class="glyphicon glyphicon-plus"></span>
-                                            <span ng-show="isActiveVitamina" class="glyphicon glyphicon-remove"></span>  
-                                             Vitaminas
-                                        </button>
-                                    <!-- Combo 
-                                        <button ng-click="activeButtonCombo()" class="btn btn-success btn-lg active"  ng-class="{'active' : isActiveCombo}">
-                                            <span ng-show="!isActiveCombo" class="glyphicon glyphicon-plus"></span>
-                                            <span ng-show="isActiveCombo" class="glyphicon glyphicon-remove"></span>  
-                                            Combo
-                                        </button>
-                                    -->
-                                </div>
-                            </div>    
-                        </fieldset>
-                    </form>
+                <div class="container-fluid">
+                    <!-- Hamburguer -->
+                    <div ng-show="showHamburguer" class="row categoria">
+                        <div class="col-md-12">
+                            <h1 class="align-center" id="hamburguer" >Hamburguers</h1>
+                        </div>    
+                        <table class="table table-stripped">
+                            <thead>
+                                <tr >
+                                    <th colspan="3" style="text-align:right; border-bottom:0px;">Carne</th>
+                                    <th colspan="1" style="text-align:right; border-bottom:0px;">Picanha</th>
+                                </tr>
+                            </thead>
+                               <tr ng-repeat-start="produto in produtos | filter: { categoria: 'hamburguer' }">
+                                    <td colspan="2" class="borda-alimento nome-prato"><strong>{{produto.nome}}</strong></td>
+                                    <td class="nome-prato align-right">R${{produto.carne}}</td>
+                                   <td class="nome-prato align-right">R${{produto.picanha}}</td>
+                               </tr>
+                               <tr ng-repeat-end>
+                                <td colspan="3">{{produto.ingredientes}}.</td>
+                               </tr>
+                        </table>
+                    </div >
+                    <!-- Cachorro-Quente -->
+                    <div ng-show="showHotDog" class="row categoria">
+                        <div class="col-md-12">
+                            <h1 class="align-center" id="hotDog" >Cachorro Quente</h1>
+                        </div>    
+                        <table class="table table-stripped">
+                               <tr ng-repeat-start="produto in produtos | filter: { categoria: 'Cachorro-Quente' }">
+                                    <td colspan="2" class="borda-alimento nome-prato"><strong>{{produto.nome}}</strong></td>
+                                    <td class="nome-prato align-right">R${{produto.preco}}</td>
+                               </tr>
+                               <tr ng-repeat-end>
+                                <td colspan="3">{{produto.ingredientes}}.</td>
+                               </tr>
+                        </table>
+                    </div >
+                    <!-- Porcao -->
+                    <div ng-show="showPorcao" class="row categoria">
+                        <div class="col-md-12">
+                            <h1 class="align-center" id="porcao" >Porções</h1>
+                        </div>    
+                         <table class="table table-stripped">
+                            <thead>
+                                <tr >
+                                    <th colspan="3" style="text-align:right; border-bottom:0px;">Pequena</th>
+                                    <th colspan="1" style="text-align:right; border-bottom:0px;">Grande</th>
+                                </tr>
+                            </thead>
+                               <tr ng-repeat-start="produto in produtos | filter: { categoria: 'Porcoes' }">
+                                    <td colspan="2" class="borda-alimento nome-prato"><strong>{{produto.nome}}</strong></td>
+                                    <td class="nome-prato align-right">R${{produto.pequena}},00</td>
+                                   <td class="nome-prato align-right">R${{produto.grande}},00</td>
+                               </tr>
+                               <tr ng-repeat-end>
+                                <td colspan="3">{{produto.ingredientes}}.</td>
+                               </tr>
+                        </table>
+                    </div >
+                    <!-- Pizza Cone Salgada -->
+                    <div ng-show="showPizzaSalgada" class="row categoria">
+                        <div class="col-md-12">
+                            <h1 class="align-center" id="pizzaSalgada" >Pizza Cone Salgada</h1>
+                        </div>    
+                        <table class="table table-stripped">
+                               <tr ng-repeat-start="produto in produtos | filter: { categoria: 'Pizza Cone Salgada' }">
+                                    <td colspan="2" class="borda-alimento nome-prato"><strong>{{produto.nome}}</strong></td>
+                                    <td class="nome-prato align-right">R${{produto.preco}}</td>
+                               </tr>
+                               <tr ng-repeat-end>
+                                <td colspan="3">{{produto.ingredientes}}.</td>
+                               </tr>
+                        </table>
+                    </div >
+                     <!-- Pizza Cone Doce -->
+                    <div ng-show="showPizzaDoce" class="row categoria">
+                        <div class="col-md-12">
+                            <h1 class="align-center" id="pizzaDoce" >Pizza Cone Doce</h1>
+                        </div>    
+                        <table class="table table-stripped">
+                               <tr ng-repeat-start="produto in produtos | filter: { categoria: 'Pizza Cone Doce' }">
+                                    <td colspan="2" class="borda-alimento nome-prato"><strong>{{produto.nome}}</strong></td>
+                                    <td class="nome-prato align-right">R${{produto.preco}}</td>
+                               </tr>
+                               <tr ng-repeat-end>
+                                <td colspan="3">{{produto.ingredientes}}.</td>
+                               </tr>
+                        </table>
+                    </div >
+                    <!-- Bebida -->
+                    <div ng-show="showBebida" class="row categoria">
+                        <div class="col-md-12">
+                            <h1 class="align-center" id="bebida" >Bebidas</h1>
+                        </div>    
+                        <table class="table table-stripped">
+                               <tr ng-repeat="produto in produtos | filter: { categoria: 'Bebidas' }">
+                                    <td colspan="2" class="borda-alimento nome-prato"><strong>{{produto.nome}}</strong></td>
+                                    <td class="nome-prato align-right">R${{produto.preco}}</td>
+                               </tr>
+                        </table>
+                    </div >
+                    <!-- Suco -->
+                    <div ng-show="showSuco" class="row categoria">
+                        <div class="col-md-12">
+                            <h1 class="align-center" id="suco" >Sucos</h1>
+                        </div>    
+                        <table class="table table-stripped">
+                               <tr ng-repeat-start="produto in produtos | filter: { categoria: 'Sucos' }">
+                                    <td colspan="2" class="borda-alimento nome-prato"><strong>{{produto.nome}}</strong></td>
+                                    <td class="nome-prato align-right">R${{produto.preco}},00</td>
+                               </tr>
+                            <tr ng-repeat-end>
+                                <td colspan="3">Água, Açúcar e Polpa da Fruta.</td>
+                               </tr>
+                        </table>
+                    </div >
+                    <!-- Vitamina -->
+                    <div ng-show="showVitamina" class="row categoria">
+                        <div class="col-md-12">
+                            <h1 class="align-center" id="vitamina" >Vitaminas</h1>
+                        </div>    
+                        <table class="table table-stripped">
+                               <tr ng-repeat-start="produto in produtos | filter: { categoria: 'Vitaminas' }">
+                                    <td colspan="2" class="borda-alimento nome-prato"><strong>{{produto.nome}}</strong></td>
+                                    <td class="nome-prato align-right">R${{produto.preco}},00</td>
+                               </tr>
+                            <tr ng-repeat-end>
+                                <td colspan="3">Água, Açúcar,Leite e Polpa da Fruta.</td>
+                               </tr>
+                        </table>
+                    </div >
                 </div>
             </div>
-            <div class="container-fluid">
-                <!-- Hamburguer -->
-                <div ng-show="showHamburguer" class="row categoria">
+
+       <div class="row delivery text-center" id="changeColor">
                     <div class="col-md-12">
-                        <h1 class="align-center" id="hamburguer" >Hamburguers</h1>
-                    </div>    
-                    <table class="table table-stripped">
-                        <thead>
-                            <tr >
-                                <th colspan="3" style="text-align:right; border-bottom:0px;">Carne</th>
-                                <th colspan="1" style="text-align:right; border-bottom:0px;">Picanha</th>
-                            </tr>
-                        </thead>
-                           <tr ng-repeat-start="produto in produtos | filter: { categoria: 'hamburguer' }">
-                                <td colspan="2" class="borda-alimento nome-prato"><strong>{{produto.nome}}</strong></td>
-                                <td class="nome-prato align-right">R${{produto.carne}}</td>
-                               <td class="nome-prato align-right">R${{produto.picanha}}</td>
-                           </tr>
-                           <tr ng-repeat-end>
-                            <td colspan="3">{{produto.ingredientes}}.</td>
-                           </tr>
-                    </table>
-                </div >
-                <!-- Cachorro-Quente -->
-                <div ng-show="showHotDog" class="row categoria">
-                    <div class="col-md-12">
-                        <h1 class="align-center" id="hotDog" >Cachorro Quente</h1>
-                    </div>    
-                    <table class="table table-stripped">
-                           <tr ng-repeat-start="produto in produtos | filter: { categoria: 'Cachorro-Quente' }">
-                                <td colspan="2" class="borda-alimento nome-prato"><strong>{{produto.nome}}</strong></td>
-                                <td class="nome-prato align-right">R${{produto.preco}}</td>
-                           </tr>
-                           <tr ng-repeat-end>
-                            <td colspan="3">{{produto.ingredientes}}.</td>
-                           </tr>
-                    </table>
-                </div >
-                <!-- Porcao -->
-                <div ng-show="showPorcao" class="row categoria">
-                    <div class="col-md-12">
-                        <h1 class="align-center" id="porcao" >Porções</h1>
-                    </div>    
-                     <table class="table table-stripped">
-                        <thead>
-                            <tr >
-                                <th colspan="3" style="text-align:right; border-bottom:0px;">Pequena</th>
-                                <th colspan="1" style="text-align:right; border-bottom:0px;">Grande</th>
-                            </tr>
-                        </thead>
-                           <tr ng-repeat-start="produto in produtos | filter: { categoria: 'Porcoes' }">
-                                <td colspan="2" class="borda-alimento nome-prato"><strong>{{produto.nome}}</strong></td>
-                                <td class="nome-prato align-right">R${{produto.pequena}},00</td>
-                               <td class="nome-prato align-right">R${{produto.grande}},00</td>
-                           </tr>
-                           <tr ng-repeat-end>
-                            <td colspan="3">{{produto.ingredientes}}.</td>
-                           </tr>
-                    </table>
-                </div >
-                <!-- Pizza Cone Salgada -->
-                <div ng-show="showPizzaSalgada" class="row categoria">
-                    <div class="col-md-12">
-                        <h1 class="align-center" id="pizzaSalgada" >Pizza Cone Salgada</h1>
-                    </div>    
-                    <table class="table table-stripped">
-                           <tr ng-repeat-start="produto in produtos | filter: { categoria: 'Pizza Cone Salgada' }">
-                                <td colspan="2" class="borda-alimento nome-prato"><strong>{{produto.nome}}</strong></td>
-                                <td class="nome-prato align-right">R${{produto.preco}}</td>
-                           </tr>
-                           <tr ng-repeat-end>
-                            <td colspan="3">{{produto.ingredientes}}.</td>
-                           </tr>
-                    </table>
-                </div >
-                 <!-- Pizza Cone Doce -->
-                <div ng-show="showPizzaDoce" class="row categoria">
-                    <div class="col-md-12">
-                        <h1 class="align-center" id="pizzaDoce" >Pizza Cone Doce</h1>
-                    </div>    
-                    <table class="table table-stripped">
-                           <tr ng-repeat-start="produto in produtos | filter: { categoria: 'Pizza Cone Doce' }">
-                                <td colspan="2" class="borda-alimento nome-prato"><strong>{{produto.nome}}</strong></td>
-                                <td class="nome-prato align-right">R${{produto.preco}}</td>
-                           </tr>
-                           <tr ng-repeat-end>
-                            <td colspan="3">{{produto.ingredientes}}.</td>
-                           </tr>
-                    </table>
-                </div >
-                <!-- Bebida -->
-                <div ng-show="showBebida" class="row categoria">
-                    <div class="col-md-12">
-                        <h1 class="align-center" id="bebida" >Bebidas</h1>
-                    </div>    
-                    <table class="table table-stripped">
-                           <tr ng-repeat="produto in produtos | filter: { categoria: 'Bebidas' }">
-                                <td colspan="2" class="borda-alimento nome-prato"><strong>{{produto.nome}}</strong></td>
-                                <td class="nome-prato align-right">R${{produto.preco}}</td>
-                           </tr>
-                    </table>
-                </div >
-                <!-- Suco -->
-                <div ng-show="showSuco" class="row categoria">
-                    <div class="col-md-12">
-                        <h1 class="align-center" id="suco" >Sucos</h1>
-                    </div>    
-                    <table class="table table-stripped">
-                           <tr ng-repeat-start="produto in produtos | filter: { categoria: 'Sucos' }">
-                                <td colspan="2" class="borda-alimento nome-prato"><strong>{{produto.nome}}</strong></td>
-                                <td class="nome-prato align-right">R${{produto.preco}},00</td>
-                           </tr>
-                        <tr ng-repeat-end>
-                            <td colspan="3">Água, Açúcar e Polpa da Fruta.</td>
-                           </tr>
-                    </table>
-                </div >
-                <!-- Vitamina -->
-                <div ng-show="showVitamina" class="row categoria">
-                    <div class="col-md-12">
-                        <h1 class="align-center" id="vitamina" >Vitaminas</h1>
-                    </div>    
-                    <table class="table table-stripped">
-                           <tr ng-repeat-start="produto in produtos | filter: { categoria: 'Vitaminas' }">
-                                <td colspan="2" class="borda-alimento nome-prato"><strong>{{produto.nome}}</strong></td>
-                                <td class="nome-prato align-right">R${{produto.preco}},00</td>
-                           </tr>
-                        <tr ng-repeat-end>
-                            <td colspan="3">Água, Açúcar,Leite e Polpa da Fruta.</td>
-                           </tr>
-                    </table>
-                </div >
-            </div>
-        </div>
-      
-   <div class="row delivery text-center" id="changeColor">
-                <div class="col-md-12">
-                    <h1><span class="glyphicon glyphicon-earphone" style="vertical-align:middle;"></span><a href="tel:02121615669"> (21)2161-5669</a>  ou <a href="tel:02178415801">(21)7841-5801</a> </h1>
+                        <h1><span class="glyphicon glyphicon-earphone" style="vertical-align:middle;"></span><a href="tel:02121615669"> (21)2161-5669</a>  ou <a href="tel:02178415801">(21)7841-5801</a> </h1>
+                    </div>
                 </div>
-            </div>
-    <div class="row">
-    <footer class="footer align-center">
-        <div class="container text-center">
-            <div class="row">
-                Os preços estão sujeitos a alteração sem aviso prévio.Todos os lanches e produtos estão sujeitos a disponibilidade. Serviço de Delivery sujeito a disponibilidade na área de Entrega. Ligue-nos para consultar se sua localização está disponível em nossa Área de Entrega.
-                <br><br>
-            Todos os Direitos Reservados a McRancho. Desenvolvido por <a href="http://pauloxavier.com" target="_blank"><strong>Paulo Xavier</strong></a>.
-            </div>
-        </div> 
-    </footer>
-    </div>
-        
-    <script src="assets/jquery/dist/jquery.min.js"></script>
-    <script src="assets/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="assets/angular/angular.min.js"></script>
-    <script src="public/js/controller.js"></script>
+        <div class="row">
+        <footer class="footer align-center">
+            <div class="container text-center">
+                <div class="row">
+                    Os preços estão sujeitos a alteração sem aviso prévio.Todos os lanches e produtos estão sujeitos a disponibilidade. Serviço de Delivery sujeito a disponibilidade na área de Entrega. Ligue-nos para consultar se sua localização está disponível em nossa Área de Entrega.
+                    <br><br>
+                Todos os Direitos Reservados a McRancho. Desenvolvido por <a href="http://pauloxavier.com" target="_blank"><strong>Paulo Xavier</strong></a>.
+                </div>
+            </div> 
+        </footer>
         </div>
-    </body>
+
+        <script src="assets/jquery/dist/jquery.min.js"></script>
+        <script src="assets/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="assets/angular/angular.min.js"></script>
+        <script src="public/js/controller.js"></script>
+            </div>
+        </div>
+        </body>
 </html>

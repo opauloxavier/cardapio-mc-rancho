@@ -120,11 +120,9 @@
   background-color: #682666; }
 
 .footer {
-  margin: 0px 0 10px 0;
-  padding: 0 0 10px 0;
   background-color: #b80000;
   color: white;
-  padding: 20px 0 20px 0;
+  padding: 20px 30px 20px 30px;
   font-size: 16px;
   vertical-align: middle; }
 
@@ -161,9 +159,9 @@ a, a:hover, a:active, a:link {
 @media screen and (max-width: 600px) {
   .btn {
     width: 100%; } }
-.btn {
-  min-height: 65px; }
-
+@media screen and (max-width: 350) {
+  .btn {
+    min-height: 65px; } }
 .jumbotron {
   background-color: #f4b325; }
 
